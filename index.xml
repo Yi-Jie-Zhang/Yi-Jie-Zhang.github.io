@@ -48,6 +48,11 @@
 &lt;li&gt;&lt;code&gt;&amp;lt;USERNAME&amp;gt;&lt;/code&gt;：是你自己github的用户名&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;&amp;lt;REPO&amp;gt;&lt;/code&gt;：是你的仓库名称&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;参考文章&#34;&gt;参考文章
+&lt;/h2&gt;&lt;p&gt;[1] &lt;a class=&#34;link&#34; href=&#34;https://docs.github.com/zh/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GitHub：管理个人访问令牌&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[2] &lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/401978754&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;2021.8.13起，Github要求使用基于令牌的身份验证&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
