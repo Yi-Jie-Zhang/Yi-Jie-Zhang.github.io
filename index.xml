@@ -7,7 +7,50 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>杰某某</copyright>
-        <lastBuildDate>Sat, 19 Apr 2025 14:56:38 +0800</lastBuildDate><atom:link href="https://yi-jie-zhang.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 19 Apr 2025 17:00:18 +0800</lastBuildDate><atom:link href="https://yi-jie-zhang.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Github 基于令牌的身份验证</title>
+        <link>https://yi-jie-zhang.github.io/p/github-%E5%9F%BA%E4%BA%8E%E4%BB%A4%E7%89%8C%E7%9A%84%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81/</link>
+        <pubDate>Sat, 19 Apr 2025 17:00:18 +0800</pubDate>
+        
+        <guid>https://yi-jie-zhang.github.io/p/github-%E5%9F%BA%E4%BA%8E%E4%BB%A4%E7%89%8C%E7%9A%84%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81/</guid>
+        <description>&lt;h2 id=&#34;起因&#34;&gt;起因
+&lt;/h2&gt;&lt;p&gt;【自2021.8.13起，Github 要求使用基于令牌的身份验证】&lt;/p&gt;
+&lt;h2 id=&#34;好处&#34;&gt;&lt;strong&gt;好处&lt;/strong&gt;
+&lt;/h2&gt;&lt;p&gt;令牌（token）与基于密码的身份验证相比，令牌提供了许多安全优势：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;唯一性：令牌特定于 GitHub，可以按使用或按设备生成。&lt;/li&gt;
+&lt;li&gt;可撤销：可以随时单独撤销令牌，而无需更新未受影响的凭据。&lt;/li&gt;
+&lt;li&gt;有限性：令牌可以缩小范围以仅允许用例所需的访问。&lt;/li&gt;
+&lt;li&gt;随机性：令牌不需要记住或定期输入的更简单密码可能会受到的字典类型或蛮力尝试的影响。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;登陆方式&#34;&gt;登陆方式
+&lt;/h2&gt;&lt;p&gt;方法一：用自己生成的token登录，把上面生成的token粘贴到输入密码的位置。&lt;/p&gt;
+&lt;p&gt;如果 push 等操作没有出现输入密码选项，请先输入如下命令，之后就可以看到输入密码选项了。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git config --system --unset credential.helper
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;方法二：把token直接添加远程仓库链接中，这样就可以避免同一个仓库每次提交代码都要输入token了：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git remote set-url origin https://&amp;lt;your_token&amp;gt;@github.com/&amp;lt;USERNAME&amp;gt;/&amp;lt;REPO&amp;gt;.git
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;your_token&amp;gt;&lt;/code&gt;：换成你自己得到的token&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;USERNAME&amp;gt;&lt;/code&gt;：是你自己github的用户名&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;REPO&amp;gt;&lt;/code&gt;：是你的仓库名称&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
         <title>NewBlog</title>
         <link>https://yi-jie-zhang.github.io/p/newblog/</link>
         <pubDate>Sat, 19 Apr 2025 14:56:38 +0800</pubDate>
