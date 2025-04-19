@@ -495,5 +495,42 @@
     }());
 </script>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<div id="aplayer"></div>
+
+<script>
+	
+	const musicDir = "https://yi-jie-zhang.github.io/" + 'music/';
+	const songs = [
+		'七里香-周杰伦',
+		'轨迹-周杰伦',
+		'断了的弦-周杰伦',
+		'晴天-周杰伦',
+		'花海-周杰伦',
+		'飞机场的10.30-陶喆',
+		'流沙-陶喆',
+		'寂寞的季节-陶喆',
+		'蝴蝶-陶喆',
+		'无缘-陶喆'
+	];
+	let audios = [];
+	songs.forEach((item) => {
+		const songInfo = item.split('-');
+		audios.push({
+			name: songInfo[0],
+			artist: songInfo[1],
+			url: musicDir + item + '/song.mp3',
+			cover: musicDir + item + '/cover.jpg',
+			lrc: musicDir + item + '/lyric.lrc'
+		})
+	})
+	const ap = new APlayer({
+    	container: document.getElementById('aplayer'),
+    	fixed: true,
+    	lrcType: 3,
+    	audio: audios
+	});
+</script>
     </body>
 </html>

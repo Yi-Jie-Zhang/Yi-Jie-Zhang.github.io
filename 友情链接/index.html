@@ -466,6 +466,52 @@
             </a>
         </article>
     
+        <article>
+            <a href="https://aplayer.js.org/#/" target="_blank" rel="noopener">
+                <div class="article-details">
+                    <h2 class="article-title">APlayer</h2>
+                    <footer class="article-time">
+                        
+                            一个简约且漂亮的 HTML5 音乐播放器
+                        
+                    </footer>
+                </div>
+        
+                
+                    
+                    
+                        
+                    
+                    <div class="article-image">
+                        <img src="/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/APlayer.png" loading="lazy">
+                    </div>
+                
+            </a>
+        </article>
+    
+        <article>
+            <a href="https://ai-bot.cn/" target="_blank" rel="noopener">
+                <div class="article-details">
+                    <h2 class="article-title">AI 工具集</h2>
+                    <footer class="article-time">
+                        
+                            一站式 AI 工具集合网站
+                        
+                    </footer>
+                </div>
+        
+                
+                    
+                    
+                        
+                    
+                    <div class="article-image">
+                        <img src="/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/ai-bot-logo.png" loading="lazy">
+                    </div>
+                
+            </a>
+        </article>
+    
 </div>
     
 
@@ -585,5 +631,42 @@
     }());
 </script>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<div id="aplayer"></div>
+
+<script>
+	
+	const musicDir = "https://yi-jie-zhang.github.io/" + 'music/';
+	const songs = [
+		'七里香-周杰伦',
+		'轨迹-周杰伦',
+		'断了的弦-周杰伦',
+		'晴天-周杰伦',
+		'花海-周杰伦',
+		'飞机场的10.30-陶喆',
+		'流沙-陶喆',
+		'寂寞的季节-陶喆',
+		'蝴蝶-陶喆',
+		'无缘-陶喆'
+	];
+	let audios = [];
+	songs.forEach((item) => {
+		const songInfo = item.split('-');
+		audios.push({
+			name: songInfo[0],
+			artist: songInfo[1],
+			url: musicDir + item + '/song.mp3',
+			cover: musicDir + item + '/cover.jpg',
+			lrc: musicDir + item + '/lyric.lrc'
+		})
+	})
+	const ap = new APlayer({
+    	container: document.getElementById('aplayer'),
+    	fixed: true,
+    	lrcType: 3,
+    	audio: audios
+	});
+</script>
     </body>
 </html>
