@@ -44,7 +44,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;your_token&amp;gt;&lt;/code&gt;：换成你自己得到的token&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;your_token&amp;gt;&lt;/code&gt;：换成你自己得到的token（一个token可用多个项目，只要更改&lt;code&gt;&amp;lt;REPO&amp;gt;.git&lt;/code&gt;即可）&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;&amp;lt;USERNAME&amp;gt;&lt;/code&gt;：是你自己github的用户名&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;&amp;lt;REPO&amp;gt;&lt;/code&gt;：是你的仓库名称&lt;/li&gt;
 &lt;/ul&gt;
