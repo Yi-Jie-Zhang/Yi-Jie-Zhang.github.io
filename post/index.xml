@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>杰某某</copyright>
-        <lastBuildDate>Mon, 21 Apr 2025 17:53:29 +0800</lastBuildDate><atom:link href="https://yi-jie-zhang.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 21 Apr 2025 18:30:11 +0800</lastBuildDate><atom:link href="https://yi-jie-zhang.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Github 基于令牌的身份验证</title>
         <link>https://yi-jie-zhang.github.io/p/github-%E5%9F%BA%E4%BA%8E%E4%BB%A4%E7%89%8C%E7%9A%84%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81/</link>
         <pubDate>Sat, 19 Apr 2025 17:00:18 +0800</pubDate>
@@ -119,8 +119,11 @@
         <guid>https://yi-jie-zhang.github.io/p/myfirstblog/</guid>
         <description>&lt;h1 id=&#34;this-is-my-first-blog&#34;&gt;This is my first blog
 &lt;/h1&gt;&lt;p&gt;Hello，World！&lt;/p&gt;
-&lt;p&gt;测试【修改时间： 2025-4-21】&lt;/p&gt;
-</description>
+&lt;blockquote class=&#34;alert alert-note&#34;&gt;
+    &lt;p&gt;这是NOTE风格&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
+    &lt;p&gt;这是TIP风格&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote class=&#34;alert alert-warn&#34;&gt;
+    &lt;p&gt;这是WARN风格&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote class=&#34;alert alert-error&#34;&gt;
+    &lt;p&gt;这是ERROR风格&lt;/p&gt;&lt;/blockquote&gt;</description>
         </item>
         
     </channel>

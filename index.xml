@@ -118,8 +118,11 @@
         <guid>https://yi-jie-zhang.github.io/p/myfirstblog/</guid>
         <description>&lt;h1 id=&#34;this-is-my-first-blog&#34;&gt;This is my first blog
 &lt;/h1&gt;&lt;p&gt;Hello，World！&lt;/p&gt;
-&lt;p&gt;测试【修改时间： 2025-4-21】&lt;/p&gt;
-</description>
+&lt;blockquote class=&#34;alert alert-note&#34;&gt;
+    &lt;p&gt;这是NOTE风格&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
+    &lt;p&gt;这是TIP风格&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote class=&#34;alert alert-warn&#34;&gt;
+    &lt;p&gt;这是WARN风格&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote class=&#34;alert alert-error&#34;&gt;
+    &lt;p&gt;这是ERROR风格&lt;/p&gt;&lt;/blockquote&gt;</description>
         </item>
         <item>
         <title>归档</title>
