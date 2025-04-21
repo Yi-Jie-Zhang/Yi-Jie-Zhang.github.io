@@ -446,6 +446,8 @@
 
 	
 	const musicDir = "https://yi-jie-zhang.github.io/" + 'music/';
+	
+	const musicCdnPath = 'https://cdn.jsdelivr.net/gh/Yi-Jie-Zhang/static-resource@v1.0.2/music/';
 	const songs = [
 		'七里香-周杰伦',
 		'轨迹-周杰伦',
@@ -464,9 +466,9 @@
 		audios.push({
 			name: songInfo[0],
 			artist: songInfo[1],
-			url: musicDir + item + '/song.mp3',
-			cover: musicDir + item + '/cover.jpg',
-			lrc: musicDir + item + '/lyric.lrc'
+			url: musicCdnPath + item + '/song.mp3',
+			cover: musicCdnPath + item + '/cover.jpg',
+			lrc: musicCdnPath + item + '/lyric.lrc'
 		})
 	})
 	const ap = new APlayer({
@@ -582,7 +584,6 @@
       width: 22px;
       height: 16px;
   }
-}
 
 </style>
 
@@ -595,7 +596,7 @@
     
     path: {
       homePath: '/',
-      modelPath: "https://cdn.jsdelivr.net/gh/Yi-Jie-Zhang/static-resource@v1.0.1/",
+      modelPath: "https://cdn.jsdelivr.net/gh/Yi-Jie-Zhang/static-resource@v1.0.2/live2d/liver2d-moc3/",
       cssPath: getCssPath,
       tipsJsonPath: getTipsJsonPath,
       tipsJsPath: cdnPath + "/waifu-tips.js",
@@ -754,6 +755,7 @@
 initTocHide();
 initScrollTop();
 initCodeMoreBox();
+
 
 </script><script src=https://yi-jie-zhang.github.io/background/sakura.js></script>
     </body>
