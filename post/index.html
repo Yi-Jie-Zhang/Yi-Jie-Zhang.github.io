@@ -773,11 +773,30 @@
     })
   }
 
+  
+  function showHideView() {
+      
+      let viewCounts = document.querySelectorAll("#viewCount");
+      if (viewCounts) {
+          
+          let article =  document.querySelector(".article-page");
+          if (!article) {
+              viewCounts.forEach(ele => {
+                  ele.style.display = 'none';
+              });
+          }
+      }
+  }
+
 initTocHide();
 initScrollTop();
 initCodeMoreBox();
+showHideView();
 
 
 </script><script src=https://yi-jie-zhang.github.io/background/sakura.js></script>
+
+
+<script defer src="https://cn.vercount.one/js"></script>
     </body>
 </html>
