@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://yi-jie-zhang.github.io/archives/'>
 
-<link rel="stylesheet" href="/scss/style.min.b53d5a8115d8fd2d604fbf5d414d3633004848c9ee24d1adab2cc94bb0ec9b16.css"><meta property='og:title' content="归档">
+<link rel="stylesheet" href="/scss/style.min.b6fae699163fc1d92235860b9f6535f5d5dd6896fbed691dd1ccedc5e802f304.css"><meta property='og:title' content="归档">
 <meta property='og:description' content="">
 <meta property='og:url' content='https://yi-jie-zhang.github.io/archives/'>
 <meta property='og:site_name' content='杰某某の博客'>
@@ -355,7 +355,28 @@
     </div>
     
 
-    <footer class="site-footer">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+<footer class="site-footer">
     <section class="copyright">
         &copy; 
         
@@ -365,9 +386,55 @@
     <section class="powerby">
         使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
         主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+        ，由 <a href="https://github.com/Yi-Jie-Zhang" target="_blank" rel="noopener">JIE</a> 魔改<br />
+        
+        共 10462 字 ,   还在努力更新中...加油！加油啦！ <br />
+
+        <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span> <br />
+        <span id="voyager">载入旅行者一号离地球距离信息...</span>
     </section>
 </footer>
 
+<script>
+    
+    var siteStart = new Date("2025-04-18T22:01:00"); 
+    function updateSiteAge() {
+    var now = new Date();
+    var diff = now - siteStart; 
+
+    
+    var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+    
+    hours = String(hours).padStart(2, '0');
+    minutes = String(minutes).padStart(2, '0');
+    seconds = String(seconds).padStart(2, '0');
+
+    document.getElementById("timeDate").innerHTML = "本站已稳定运行： " + days + " 天 ";
+    document.getElementById("times").innerHTML = hours + " 小时 " + minutes + " 分 " + seconds + " 秒";
+  }
+
+    
+    var voyagerStart = new Date("2022-08-01T00:00:00"); 
+    function updateVoyagerDistance() {
+    var now = new Date();
+    var diff = now - voyagerStart; 
+    var secondsPassed = diff / 1000; 
+
+    
+    var distanceKm = 23400000000 + secondsPassed * 17;
+    var astronomicalUnits = (distanceKm / 149600000).toFixed(6); 
+
+    document.getElementById("voyager").innerHTML = "旅行者 1 号当前距离地球 " + distanceKm + " 千米，约为 " + astronomicalUnits + " 个天文单位 🚀";
+  }
+
+    
+    setInterval(updateSiteAge, 250); 
+    setInterval(updateVoyagerDistance, 250); 
+</script>
 
             </main>
         </div>
@@ -727,5 +794,7 @@ showHideView();
 
 
 <script defer src="https://cn.vercount.one/js"></script>
+
+
     </body>
 </html>
